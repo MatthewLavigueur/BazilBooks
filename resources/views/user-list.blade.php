@@ -24,7 +24,7 @@
                             <th>Last Name</th>
                             <th>User Name</th>
                             <th>Privilege</th> 
-                            @if(Auth::user()->userPrivilegeId==2)
+                            @if(Auth::user()->userPrivilegeId==1)
                             <th>Delete</th>  
                             
                             <th>Edit</th>   
