@@ -20,7 +20,7 @@
     },
     "autoload": {
         "classmap": [
-            "app/controllers/admin",
+           
             "database/seeds",
             "database/factories"
         ],
