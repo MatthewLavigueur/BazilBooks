@@ -19,18 +19,18 @@ Route::get('/', function () {
 Route::get('/login', 'LoginController@index');
 Route::post('authentication', 'LoginController@authentication');
 Route::get('/logout', 'LoginController@logout');
-
+Route::get('register', 'RegisterController@index');
+Route::post('register-insert', 'RegisterController@save');
 
 Route::group(['middleware' => 'authverify'], function(){
 
 
-            Route::get('register', 'registerController@index');
-            Route::post('register-insert', 'registerController@save');
-            Route::get('user-list', 'registerController@userList');
-            Route::get('user-delete-{id?}', 'registerController@userDelete');
-            Route::get('user-edit-{id?}','registerController@userEdit');
-            Route::post('user-edit','registerController@userEditPost');      
-            Route::post('user-delete', 'registerController@userDeletePost');
+       
+            Route::get('user-list', 'RegisterController@userList');
+            Route::get('user-delete-{id?}', 'RegisterController@userDelete');
+            Route::get('user-edit-{id?}','RegisterController@userEdit');
+            Route::post('user-edit','RegisterController@userEditPost');      
+            Route::post('user-delete', 'RegisterController@userDeletePost');
 
             Route::get('customer', 'customerController@index');
             Route::post('customer-insert', 'customerController@save');
