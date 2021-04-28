@@ -16,7 +16,7 @@
             <h1 class="h3 mb-2 text-gray-800 text-center">Edit User Information</h1>
 
             
-                                         @if(Auth::user()->userPrivilegeId==1)
+                                         @if(Auth::user()->userPrivilegeId==2)
                                         <h1 class="h3 mb-2 text-canger-800 text-center text-danger">Access Denied</h1>
                                         @endIf
             
@@ -58,7 +58,7 @@
         <form action="user-edit" method="post">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
 
- <!-- Manager access start -->   @if(Auth::user()->userPrivilegeId==2)
+ <!-- Manager access start -->   @if(Auth::user()->userPrivilegeId==1)
 				<input type="hidden" name="userId" value="{{$userEdit->userId}}"/>
                 
                                 <div class="col-sm-12 mb-3 mb-sm-0">
