@@ -38,7 +38,7 @@
                             <td>{{$row->lName}}</td>
                             <td>{{$row->username}}</td>
                             <td>{{$row->userHasPrivilege->privilege}}</td>
-                            @if(Auth::user()->userPrivilegeId==2)
+                            @if(Auth::user()->userPrivilegeId==1)
                             <td><a class = "btn btn-danger" href="user-edit-{{$row->userId}}">Delete</a></td>
                            
                             <td><a class="btn btn-info " href="user-edit-{{$row->userId}}">Edit</a></td>
