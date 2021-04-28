@@ -16,9 +16,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/login', 'loginController@index');
-Route::post('authentication', 'loginController@authentication');
-Route::get('/logout', 'loginController@logout');
+Route::get('/login', 'LoginController@index');
+Route::post('authentication', 'LoginController@authentication');
+Route::get('/logout', 'LoginController@logout');
 
 
 Route::group(['middleware' => 'authverify'], function(){
