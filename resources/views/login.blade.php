@@ -50,7 +50,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small text-dark" href="password.html">Forgot Password?</a>
+                                             <!-- <a class="small text-dark" href="password.html">Forgot Password?</a> -->
                                                 <input type="submit" value="Login" class="btn btn-dark">
                                             </div>
                                         </form>
