@@ -66,7 +66,7 @@
                                                 <input type="submit" class="btn  btn-info btn-block"  value="Update Payment">
                                                 </div>
 
-                                                    @if(Auth::user()->userPrivilegeId==2)  
+                                                    @if(Auth::user()->userPrivilegeId==1)  
                                                         <div class="col-sm-4 mb-3 mb-sm-0">
                                                         
                                                         <button type="button" class="btn  btn-danger btn-block" data-toggle="modal" data-target="#deleteModal">Delete</button>

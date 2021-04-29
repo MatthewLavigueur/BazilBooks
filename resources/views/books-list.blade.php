@@ -35,7 +35,7 @@
                             <th>In-Stock</th>
                             <th>Publisher</th>
                             <th>Price</th>
-                            @if(Auth::user()->userPrivilegeId==2)  
+                            @if(Auth::user()->userPrivilegeId==1)  
                             <th>Delete</th>  
                             @endif
                             <th>Edit</th>   
@@ -53,7 +53,7 @@
                             <td>{{$row->inStock}}</td>
                             <td>{{$row->booksHasPublisher->publisherName}}</td>
                             <td>${{$row->bookPrice}}</td>
-                            @if(Auth::user()->userPrivilegeId==2)  
+                            @if(Auth::user()->userPrivilegeId==1)  
                             <td><a class = "btn btn-danger" href="">Delete</a></td>
                            @endif
                             <td><a class="btn btn-info " href="books-edit-{{$row->BooksId}}">Edit</a></td>

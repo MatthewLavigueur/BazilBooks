@@ -72,7 +72,7 @@
                                <textarea class="form-control py-4" name="description" cols="10" rows="3" value="{{$booksEdit->description}}"></textarea>
                         </div> 
                         <div class="col-sm-12 mb-3 mb-sm-0">
-                        @if(Auth::user()->userPrivilegeId==2)
+                        @if(Auth::user()->userPrivilegeId==1)
                                 <label class="text-gray-800"><strong>Book Price</strong></label>
                                 <input class="form-control py-4 " name="bookPrice" type="text" placeholder="Enter Price" value="{{$booksEdit->bookPrice}}" maxlength="20"  />
                                

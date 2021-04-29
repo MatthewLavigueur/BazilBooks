@@ -31,7 +31,7 @@
                             <th>Customer Phone</th>
                             <th>Customer Email</th>
                             <th>Customer Address</th> 
-                            @if(Auth::user()->userPrivilegeId==2)  
+                            @if(Auth::user()->userPrivilegeId==1)  
                             <th>Delete</th>  
                             @endif
                             <th>Edit</th>   
@@ -46,7 +46,7 @@
                             <td>{{$row->customerPhone}}</td>
                             <td>{{$row->customerEmail}}</td>
                             <td>{{$row->customerAddress}}</td>
-                            @if(Auth::user()->userPrivilegeId==2)  
+                            @if(Auth::user()->userPrivilegeId==1)  
                             <td><a class = "btn btn-danger" href="customer-edit-{{$row->customerId}}">Delete</a></td>
                            @endif
                             <td><a class="btn btn-info " href="customer-edit-{{$row->customerId}}">Edit</a></td>

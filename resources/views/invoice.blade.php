@@ -80,7 +80,7 @@
                                             @if(isset($invoice))
                                                 {{$invoice->discount}}
                                             @else  
-                                            @if(Auth::user()->userPrivilegeId==2)
+                                            @if(Auth::user()->userPrivilegeId==1)
                                                 <input class="form-control py-4" name="discount" maxlength="20" type="text" placeholder="Enter Discount" value="{{old('discount')}}" />
                                              @endif
                                                                         @endif

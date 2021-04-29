@@ -33,7 +33,7 @@
                             <th>Author Name</th>
                             <th>Author Birthday</th>
                             <th>Country</th>
-                            @if(Auth::user()->userPrivilegeId==2)  
+                            @if(Auth::user()->userPrivilegeId==1)  
                             <th>Delete</th>  
                             @endif
                             <th>Edit</th>   
@@ -47,7 +47,7 @@
                             <td>{{$row->authorName}}</td>
                             <td>{{$row->authorBirthday}}</td>
                             <td>{{$row->authorHasCountry->country}}</td>
-                            @if(Auth::user()->userPrivilegeId==2)  
+                            @if(Auth::user()->userPrivilegeId==1)  
                             <td><a class = "btn btn-danger" href="">Delete</a></td>
                            @endif
                             <td><a class="btn btn-info " href="author-edit-{{$row->authorId}}">Edit</a></td>
