@@ -88,7 +88,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group mt-4 mb-0"><input type="submit" value="Reigster Account" class="btn btn-dark btn-block"></div>
+                                            <div class="form-group mt-4 mb-0"><input type="submit" value="Register Account" class="btn btn-dark btn-block"></div>
                                         </form>
 
 
