@@ -32,63 +32,63 @@ Route::group(['middleware' => 'authverify'], function(){
             Route::post('user-edit','RegisterController@userEditPost');      
             Route::post('user-delete', 'RegisterController@userDeletePost');
 
-            Route::get('customer', 'customerController@index');
-            Route::post('customer-insert', 'customerController@save');
-            Route::get('customer-list', 'customerController@customerList');
-            Route::get('customer-edit-{id?}','customerController@customerEdit');
-            Route::post('customer-edit','customerController@customerEditPost');
-            Route::post('customer-delete', 'customerController@customerDeletePost');
+            Route::get('customer', 'CustomerController@index');
+            Route::post('customer-insert', 'CustomerController@save');
+            Route::get('customer-list', 'CustomerController@customerList');
+            Route::get('customer-edit-{id?}','CustomerController@customerEdit');
+            Route::post('customer-edit','CustomerController@customerEditPost');
+            Route::post('customer-delete', 'CustomerController@customerDeletePost');
          
-            Route::get('payment', 'paymentController@index');
-            Route::post('payment-insert', 'paymentController@save');
-            Route::get('payment-list', 'paymentController@paymentList');
-            Route::get('payment-edit-{id?}','paymentController@paymentEdit');
-            Route::post('payment-edit','paymentController@paymentEditPost');
-            Route::post('payment-delete', 'paymentController@paymentDeletePost');
+            Route::get('payment', 'PaymentController@index');
+            Route::post('payment-insert', 'PaymentController@save');
+            Route::get('payment-list', 'PaymentController@paymentList');
+            Route::get('payment-edit-{id?}','PaymentController@paymentEdit');
+            Route::post('payment-edit','PaymentController@paymentEditPost');
+            Route::post('payment-delete', 'PaymentController@paymentDeletePost');
 
-            Route::get('genre', 'genreController@index');
-            Route::post('genre-insert', 'genreController@save');
-            Route::get('genre-list', 'genreController@genreList');
-            Route::get('genre-edit-{id?}','genreController@genreEdit');
-            Route::post('genre-edit','genreController@genreEditPost');
-            Route::post('genre-delete', 'genreController@genreDeletePost');
+            Route::get('genre', 'GenreController@index');
+            Route::post('genre-insert', 'GenreController@save');
+            Route::get('genre-list', 'GenreController@genreList');
+            Route::get('genre-edit-{id?}','GenreController@genreEdit');
+            Route::post('genre-edit','GenreController@genreEditPost');
+            Route::post('genre-delete', 'GenreController@genreDeletePost');
     
-            Route::get('publisher', 'publisherController@index');
-            Route::post('publisher-insert', 'publisherController@save');
-            Route::get('publisher-list', 'publisherController@publisherList');
-            Route::get('publisher-edit-{id?}','publisherController@publisherEdit');
-            Route::post('publisher-edit','publisherController@publisherEditPost');
-            Route::post('publisher-delete', 'publisherController@publisherDeletePost');
+            Route::get('publisher', 'PublisherController@index');
+            Route::post('publisher-insert', 'PublisherController@save');
+            Route::get('publisher-list', 'PublisherController@publisherList');
+            Route::get('publisher-edit-{id?}','PublisherController@publisherEdit');
+            Route::post('publisher-edit','PublisherController@publisherEditPost');
+            Route::post('publisher-delete', 'PublisherController@publisherDeletePost');
           
-            Route::get('country', 'countryController@index');
-            Route::post('country-insert', 'countryController@save');
-            Route::get('country-list', 'countryController@countryList');
-            Route::get('country-edit-{id?}','countryController@countryEdit');
-            Route::post('country-edit','countryController@countryEditPost');
-            Route::post('country-delete', 'countryController@countryDeletePost');
+            Route::get('country', 'CountryController@index');
+            Route::post('country-insert', 'CountryController@save');
+            Route::get('country-list', 'CountryController@countryList');
+            Route::get('country-edit-{id?}','CountryController@countryEdit');
+            Route::post('country-edit','CountryController@countryEditPost');
+            Route::post('country-delete', 'CountryController@countryDeletePost');
 
-            Route::get('author', 'authorController@index');
-            Route::post('author-insert', 'authorController@save');
-            Route::get('author-list', 'authorController@authorList');
-            Route::get('author-edit-{id?}','authorController@authorEdit');
-            Route::post('author-edit','authorController@authorEditPost');
-            Route::post('author-delete', 'authorController@authorDeletePost');
+            Route::get('author', 'AuthorController@index');
+            Route::post('author-insert', 'AuthorController@save');
+            Route::get('author-list', 'AuthorController@authorList');
+            Route::get('author-edit-{id?}','AuthorController@authorEdit');
+            Route::post('author-edit','AuthorController@authorEditPost');
+            Route::post('author-delete', 'AuthorController@authorDeletePost');
          
-            Route::get('books', 'booksController@index');
-            Route::post('books-insert', 'booksController@save');
-            Route::get('books-list', 'booksController@booksList');
-            Route::get('books-edit-{id?}','booksController@booksEdit');
-            Route::post('books-edit','booksController@booksEditPost');
-            Route::post('books-delete', 'booksController@booksDeletePost');
+            Route::get('books', 'BooksController@index');
+            Route::post('books-insert', 'BooksController@save');
+            Route::get('books-list', 'BooksController@booksList');
+            Route::get('books-edit-{id?}','BooksController@booksEdit');
+            Route::post('books-edit','BooksController@booksEditPost');
+            Route::post('books-delete', 'BooksController@booksDeletePost');
 
-            Route::get('invoice', 'invoiceController@index');
-            Route::post('invoice', 'invoiceController@save');
-            Route::get('invoice-{id?}', 'invoiceController@invoiceBooks');
-            Route::get('invoice-delete-{id?}', 'invoiceController@invoiceBooksDelete');
-            Route::get('invoice-edit-{id?}','invoiceController@invoiceEdit');
-            Route::post('add-book', 'invoiceController@addBook');
-            Route::get('invoice', 'invoiceController@invoiceList');
-            Route::get('invoicePDF-{id?}', 'invoiceController@invoicePDF');
+            Route::get('invoice', 'InvoiceController@index');
+            Route::post('invoice', 'InvoiceController@save');
+            Route::get('invoice-{id?}', 'InvoiceController@invoiceBooks');
+            Route::get('invoice-delete-{id?}', 'InvoiceController@invoiceBooksDelete');
+            Route::get('invoice-edit-{id?}','InvoiceController@invoiceEdit');
+            Route::post('add-book', 'InvoiceController@addBook');
+            Route::get('invoice', 'InvoiceController@invoiceList');
+            Route::get('invoicePDF-{id?}', 'InvoiceController@invoicePDF');
 
 
      
